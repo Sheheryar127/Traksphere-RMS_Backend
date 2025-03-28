@@ -73,7 +73,7 @@
   "scripts": {
     "dev": "nodemon ./src/index.ts",
     "build": "tsc",
-    "start": "node ./src/index.ts",
+    "start": "ts-node ./src/index.ts",
     "migration:generate": "npx typeorm-ts-node-commonjs migration:generate -d ./src/db/data-source.ts ./src/db/migrations/sync",
     "migration:run": "npx typeorm-ts-node-commonjs migration:run -d ./src/db/data-source.ts",
     "migration:revert": "npx typeorm-ts-node-commonjs migration:revert -d ./src/db/data-source.ts"
